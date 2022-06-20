@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+
+nav{
+    justify-content: space-between;
+    background-color: brown;
+    display: flex;
+
+}
+img{
+    width: 80px;
+    border-radius: 100%;
+    margin: 8px;
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+.inicio{
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-size: 20px; 
+}
+
+.productos{
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-size: 20px; 
+}
+
+.take{
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-size: 20px; 
+}
+
+.contacto{
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-size: 20px; 
+}
