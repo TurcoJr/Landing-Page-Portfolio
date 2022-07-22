@@ -1,60 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 body{
     margin: 0px;
+    background: radial-gradient(
+        circle at 33% 100%,
+            #fed373 4%,
+            #f15245 30%,
+            #d92e7f 62%,
+            #9b36b7 85%,
+            #515ecf );
 }
 
-nav{
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
     justify-content: space-between;
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0.842);
     display: flex;
-
 }
-img{
+
+#logo{
     width: 80px;
     border-radius: 100%;
     margin: 8px;
+    box-shadow: 3px 3px 2px 1px rgb(80, 40, 40);
 }
 
-div{
+nav{
     display: flex;
     align-items: center;
 }
 
-.inicio{
-    margin: 15px;
-    cursor: pointer;
-    border: none;
-    background-color: brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blanchedalmond;
-    font-size: 20px; 
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
 }
 
-.productos{
+a{
     margin: 15px;
-    border: none;
     cursor: pointer;
-    background-color: brown;
+    border: none;
+    background-color: rgba(165, 42, 42, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
     color: blanchedalmond;
-    font-size: 20px; 
+}
+a:hover{
+    color: rgb(255, 196, 0);
+    text-decoration: underline;
+    transition: 0.7s;
 }
 
-.take{
-    margin: 15px;
-    cursor: pointer;
-    border: none;
-    background-color: brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blanchedalmond;
-    font-size: 20px; 
+/* SECTION PRESENTACION */
+
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
 }
 
-.contacto{
+h1{
+    font-family: 'Smooch', cursive;
+    font-size: 50px;
+    margin: 10px;
+}
+
+article{
+    width: 600px;
+    display: flex;
     margin: 15px;
-    border: none;
-    cursor: pointer;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 15px 15px 10px 5px;
+    align-items: center;
+}
+
+.slogan{
+
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: brown;    
+    width: 500px;
+
+}
+
+div{
+    display: flex;
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px;
     background-color: brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blanchedalmond;
-    font-size: 20px; 
+    -webkit-text-stroke: .5px blanchedalmond;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.fotoroller{
+    border-radius: 25px;
+    box-shadow: 15px 15px 10px 5px;
+}
+
+/* SECTION INFO */
+
+.info1{
+    text-align: center;
+    border: 1px solid black;
+    margin: 100px 70px;
+    padding: 30px 0;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+    box-shadow: 15px 15px 10px 5px;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;  
+    color: #080d3b;
+}
+
+b{
+    color: rgb(255, 255, 255);
+    background-color: #080d3b;
+}
+
+/* SECTION 3 */
+
+.info2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 100px 70px;
+    padding: 30px 0;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+    box-shadow: 15px 15px 10px 5px;
+}
+
+.titulo2{
+    font-family: 'Smooch', cursive;
+    font-size: 60px;
+    margin: 10px;
+    text-decoration: underline;
+    margin: 30px;
+}
+
+#elegir{
+    color: brown;
+    background-color: rgba(255, 235, 205, 0);
+    margin: 100px;
+}
+
+
+
+.fototipos{
+    width: 70%;
+    margin: 40px;
 }
