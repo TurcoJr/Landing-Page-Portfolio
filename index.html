@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <title>Landing Page CAS</title>
     <link rel="stylesheet" href="styles.css" />
+    <!--colocando "link:css" se escribe el renglón completo"-->
     <link rel="stylesheet" href="./font/Smooch-Regular.ttf" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <!-- <i class="fa-solid fa-bars"></i>  ícono de menú hamburguesa-->
         <img id="logo" src="./imagenes/logo cas2.png" alt="Logo no found">
         <nav>
             <ul>
-                <li><a>Inicio</a></li>
-                <li><a>Productos</a></li>
-                <li><a>Clases</a></li>
-                <li><a>Contacto</a></li>
+                <li><a class="navbarbtn" href="#inicio">Inicio</a></li>
+                <li><a class="navbarbtn" href="#conocenos">Conocenos</a></li>
+                <li><a class="navbarbtn" href="#productos">Productos</a></li>
+                <li><a class="navbarbtn" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="presentacion">
+        <section class="presentacion" id="inicio">
             <article>
                 <h1>Rollers CAS</h1>
                 <p class="slogan">¿Querés comprar tus primeros rollers y no sabés cuál? Ya tenes los tuyos y no los
@@ -38,7 +40,7 @@
                 alt="img no found">
         </section>
 
-        <section class="info1">
+        <section id="conocenos">
             <p>Somos una organización sin fines de lucro que motiva y enseña a apasionados por el Free Skate.</p>
             <p>Queremos la mejor experiencia para vos: aprendé qué tipos de patinajes existen y cerciorate que necesitas
                 comprar y qué clases tomar.</p>
@@ -46,49 +48,79 @@
                 una qué esté a tu nivel de velocidad y distancias que podes recorer.</p>
         </section>
 
-        <section class="info2">
+        <section id="productos">
             <p class="titulo2">Elegí lo que necesites:</p>
-            
+
             <div class="cartas">
                 <div class="card">
-                    <img class="img-card" src="./imagenes/fitnessroller.png">
-                    <p>Para principiantes o para usarlos como un deporte aeróbico</p>
+                    <p><b>Fitness</b></p>
+                    <img class="img-card" src="./imagenes/fitnessroller-PhotoRoom.png">
+                    <p>Para usarlos como un actividad aeróbica</p>
                 </div>
                 <div class="card">
-                    <img class="img-card" src="./imagenes/Slalomroller.png">
-                    <p>Usalos con conitos</p>
+                    <p><b>Slalom</b></p>
+                    <img class="img-card" src="./imagenes/Slalomroller-PhotoRoom.png">
+                    <p>Hacé piruetas esquivando los conitos</p>
                 </div>
                 <div class="card">
-                    <img class="img-card" src="./imagenes/FSroller.png">
-                    <p>Free Skate para saltar y derrapar</p>
+                    <p><b>Free Skate</b></p>
+                    <img class="img-card" src="./imagenes/FSroller-PhotoRoom.png">
+                    <p>Estilo urbano saltar y derrapar libremente</p>
                 </div>
                 <div class="card">
-                    <img class="img-card" src="./imagenes/AgresivoRoller.png">
-                    <p>Saltar sobre barandas y rampas</p>
+                    <p><b>Agrsivo</b></p>
+                    <img class="img-card" src="./imagenes/AgresivoRoller-PhotoRoom.png">
+                    <p>Trucos sobre barandas y rampas</p>
                 </div>
                 <div class="card">
-                    <img class="img-card" src="./imagenes/HockeyRoller.png">
+                    <p><b>Hockey</b></p>
+                    <img class="img-card" src="./imagenes/HockeyRoller-PhotoRoom.png">
                     <p>Si te gusta el Hockey éstos son tus patines</p>
                 </div>
                 <div class="card">
-                    <img class="img-card" src="./imagenes/ClasicosRoller.png">
-                    <p>Patines Clásicos</p>
+                    <p><b>Clásico</b></p>
+                    <img class="img-card" src="./imagenes/ClasicosRoller-PhotoRoom.png">
+                    <p>Patines Clásicos de ruedas paralelas</p>
                 </div>
                 <div class="card">
-                    <img class="img-card" src="./imagenes/VelocidadRoller.png">
+                    <p><b>Velocidad</b></p>
+                    <img class="img-card" src="./imagenes/VelocidadRoller-PhotoRoom.png">
+                    <p>Quieres ir lo más rápido posible?</p>
+                </div>
+                <div class="card">
+                    <p><b>Descenso</b></p>
+                    <img class="img-card" src="./imagenes/descensoPatin-PhotoRoom.png">
                     <p>La adrenalina es tu estilo!</p>
                 </div>
             </div>
 
-            <ul>
-                <li><a id="elegir">Clases</a></li>
-                <li><a id="elegir">Salidas: días y horario</a></li>
-                <li><a id="elegir">Comprar un producto</a></li>
-            </ul>
-            <img class="fototipos" src="./imagenes/PatinesTipo.jpg" />
         </section>
     </main>
 
 </body>
+<footer id="contacto">
+
+    <div class="ubication">
+        <p>Seguinos en redes:</p>
+        <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <a href="http://www.twitter.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+    </div>
+    <div class="contact-us">
+        <p>Contactanos:</p>
+        <ul>
+            <li>Calle falsa 1234</li>
+            <li>email@hotmail.com</li>
+            <li>011-1234-1234</li>
+        </ul>
+    </div>
+    <div class="map">
+        <p>Encontranos en:</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.761849457948!2d-58.40095988423238!3d-34.78677017471468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3194a44b3ed%3A0xb3c4c71736efabce!2sFinky%20Park!5e0!3m2!1sen!2sar!4v1658708190215!5m2!1sen!2sar"
+            width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
 
 </html>
