@@ -6,7 +6,11 @@
     box-sizing: border-box;
 }
 
-
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: #080d3b;
+}
 
 body {
     background-image: url(./imagenes/powerslidewallpaper.jpg);
@@ -14,6 +18,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: auto; /* no se que hace*/
 }
 
 /* HEADER */
@@ -37,11 +42,61 @@ nav {
     align-items: center;
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 50px;
+.menu-toggle {
+    display: none;
 }
+
+.menu-button {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: antiquewhite;
+    padding: 0 30px;
+}
+
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite;
+    
+}
+
+.toggle li {
+    list-style: none;
+    padding: 5px;
+}
+
+
+
+.menu-toggle:checked + .toggle {
+    display: block;
+    background-color: rgba(165, 42, 42, 0.842);
+    color: antiquewhite;
+    
+}
+
+ @media (max-width: 700px){ 
+    .menu-button{
+        display: block;
+    }
+    .toggle{
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+    }
+
+
+}
+
 
 .navbarbtn{
     margin: 15px;
@@ -68,7 +123,8 @@ a:hover {
 .presentacion {
     display: flex;
     justify-content: space-around;
-    margin: 100px;
+    margin-top: 100px;
+    width: 100%;
 }
 
 h1 {
@@ -125,24 +181,36 @@ button {
     box-shadow: 15px 15px 10px 5px;
 }
 
+
+
 /* SECTION CONOCENOS */
 
 #conocenos {
+    background-image: url(./imagenes/we.jpg);
+    min-height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
     text-align: center;
     margin: 100px 70px;
     padding: 30px 100px;
     border: 1px solid black;
-    background-color: blanchedalmond;
     border-radius: 25px;
     box-shadow: 15px 15px 10px 5px;
 }
 
-p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    color: #080d3b;
+#conocenos p{
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: brown;
 }
+
 
 span {
     font-weight: 700;
@@ -290,3 +358,9 @@ footer {
     text-decoration: underline;
     margin-bottom: 2rem;
 }
+
+a{
+    color: black;
+}
+
+

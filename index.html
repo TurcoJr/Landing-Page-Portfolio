@@ -16,7 +16,14 @@
         <!-- <i class="fa-solid fa-bars"></i>  ícono de menú hamburguesa-->
         <img id="logo" src="./imagenes/logo cas2.png" alt="Logo no found">
         <nav>
-            <ul>
+            <label for="menu-toggle">
+                <div class="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </label>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <ul class="toggle">
                 <li><a class="navbarbtn" href="#inicio">Inicio</a></li>
                 <li><a class="navbarbtn" href="#conocenos">Conocenos</a></li>
                 <li><a class="navbarbtn" href="#productos">Productos</a></li>
@@ -39,6 +46,7 @@
             <img class="fotoroller" src="http://www.blackflag.com.mx/image/cache/data/Tornasol%20negro-400x500.jpg"
                 alt="img no found">
         </section>
+        <div class="background"></div>
 
         <section id="conocenos">
             <p>Somos una organización sin fines de lucro que motiva y enseña a apasionados por el Free Skate.</p>
@@ -68,7 +76,7 @@
                     <p>Estilo urbano saltar y derrapar libremente</p>
                 </div>
                 <div class="card">
-                    <p><b>Agrsivo</b></p>
+                    <p><b>Agresivo</b></p>
                     <img class="img-card" src="./imagenes/AgresivoRoller-PhotoRoom.png">
                     <p>Trucos sobre barandas y rampas</p>
                 </div>
@@ -93,7 +101,6 @@
                     <p>La adrenalina es tu estilo!</p>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -121,6 +128,9 @@
             width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+
+
 </footer>
 
 </html>
